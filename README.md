@@ -4,6 +4,8 @@
 
 #### By _**Sam Park**_
 
+### Link to [Ping-Pongatorizorator GitHub page](https://github.com/sampark18/ping-pong.git!)
+
 ## Description
 
 _This website will translate your numbers into Roman numerals._
@@ -20,11 +22,19 @@ _This website will translate your numbers into Roman numerals._
 | User will be able to enter a new number and see new results over and over again |X| X|
 
 
+## Objectives
+* JavaScript business logic and user interface logic are separate.
+* Variable names are descriptive and use lower camel case (e.g. myVariableExample).
+* Code has proper indentation and spacing.
+* All previous objectives have been met.
+* Project is broken down into "plain English" specs, listed in README.
+* You are able to discuss the flow of your code and the concepts behind it with an instructor using correct terminology.
+
 ## Setup/Installation Requirements
 
-* _Clone this repository_
-* _Open a HTML file_
-* _Open web browser of choice_
+* Clone this repository
+* Open a HTML file
+* Open web browser of choice
 
 ## Known Bugs
 * Protozoa
@@ -36,7 +46,8 @@ _This website will translate your numbers into Roman numerals._
 
 ## Support and contact details
 
-_Sam Park: sampark18@gmail.com_
+##### Sam Park
+[sampark18@gmail.com](sampark18@gmail.com!)
 
 ## Technologies Used
 
