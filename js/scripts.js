@@ -1,38 +1,43 @@
 // =================BackEnd===================
-
 var pongerator = function(number) {
   var pongNum = [];
-  // var mulThree;
-  // var mulFive;
-  // var mulFifteen;
-};
-
-  for (index = 0; index <= pongNum.length; index++) {
+  for (index = 0; index <= number; index ++) {
+    // debugger;
     if (number % 15 === 0) {
       pongNum.push("pingpong");
-    };
+      break;
+    }
 
     else if (number % 5 === 0) {
-        pongNum.push("pong");
-      };
+      pongNum.push("pong");
+      break;
+      }
 
     else if (number % 3 === 0) {
-        pongNum.push("ping");
-      };
+      pongNum.push("ping");
+      break;
+      }
 
     else {
       pongNum.push(index);
+      // break;
       }
-  };
-
+  }
+  return pongNum;
+};
 
 
 // =================FrontEnd==================
-$(function() {
+$(document).ready(function() {
   $('#pongform').submit(function(event) {
     event.preventDefault();
-    var number = parseInt($('#numbers').val());
-    pongNum = pongerator(number);
 
-    var results = pongerator(number);
-    $('#results').append("<li>" + pongNum[index] + "</li>");
+    var number = parseInt($('#numbers').val());
+    pongResults = pongerator(number);
+
+    pongResults.forEach(function(pongResult) {
+    $('#results').append("<li>" + pongResult + "</li>");
+    });
+    // $('#results').show();
+  });
+});
