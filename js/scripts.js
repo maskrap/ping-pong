@@ -2,26 +2,28 @@
 
 var pongerator = function(number) {
   var pongNum = [];
-  var mulThree;
-  var mulFive;
-  var mulFifteen;
+  // var mulThree;
+  // var mulFive;
+  // var mulFifteen;
 };
 
-  for (i = 0; i; i++) {
+  for (index = 0; index <= pongNum.length; index++) {
     if (number % 15 === 0) {
       pongNum.push("pingpong");
     };
-  };
 
     else if (number % 5 === 0) {
         pongNum.push("pong");
       };
-    };
 
     else if (number % 3 === 0) {
         pongNum.push("ping");
       };
-    };
+
+    else {
+      pongNum.push(index);
+      }
+  };
 
 
 
@@ -30,6 +32,7 @@ $(function() {
   $('#pongform').submit(function(event) {
     event.preventDefault();
     var number = parseInt($('#numbers').val());
+    pongNum = pongerator(number);
 
     var results = pongerator(number);
-    $('#results').text(results);
+    $('#results').append("<li>" + pongNum[index] + "</li>");
