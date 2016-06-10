@@ -34,9 +34,10 @@ $(document).ready(function() {
     event.preventDefault();
     var number = parseInt($('#numbers').val());
     pongResults = pongerator(number);
+    $('ul.results li').remove();
 
     pongResults.forEach(function(pongResult) {
-    $(".results").append("<li>" + pongResult + "</li>");
+    $("ul.results").append("<li>" + pongResult + "</li>");
     });
     // $('.results').show();
   });
